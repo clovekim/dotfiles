@@ -33,12 +33,12 @@ fi
 
 # updated at 2019/07/13
 # nodejs (v12)
-echo -e "Installing ${RED}NodeJS (v12)${NC}"
+echo -e "Installing ${RED}NodeJS (v14)${NC}"
 echo -e "${BLUE}node, npm, yarn, diff-so-fancy${NC}"
 echo -n "continue? [y/N] "
 read answer
 if [ "$answer" != "${answer#[Yy]}" ]; then
-	curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+	curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
   sudo apt install -y nodejs
   sudo npm -g install yarn
   sudo yarn global add diff-so-fancy
